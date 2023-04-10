@@ -3,6 +3,6 @@ Codes associated to the paper "Fine-scale interplay between decline and growth d
 
 First, download the repo on your local machine and open the file "spatio-temporal_modelling.Rproj" from RStudio. Then run the script entitled "model_run.R". 
 
-Note that the model fit is bad in this example as we are using synthetic data (with 50 locations only). 
+Note that the model fit is not satisfying in this example because it is using synthetic data (with 50 locations only). 
 
-See Supplementary Material "Details on spatio-temporal modelling" to see model fit and other model diagnostics for checking the model fitted on real data.  
+See Supplementary Material "Details on spatio-temporal modelling" to see model fit and other model diagnostics for more information.  
