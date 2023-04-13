@@ -1,6 +1,6 @@
 # Spatio-temporal modelling of coral communities 
 
-Codes associated to the paper "Fine-scale interplay between decline and growth determines the spatial recovery of coral communities within a reef".
+Codes associated with the paper "Fine-scale interplay between decline and growth determines the spatial recovery of coral communities within a reef".
 
 The model runs using the R package INLA (Rue et al. 2009). 
 
