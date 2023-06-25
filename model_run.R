@@ -149,7 +149,7 @@ cellmeans.fixed <- pred_loc %>%
   slice(rep(row_number(), length(unique(df$idyear))))%>%
   mutate(idyear = rep(unique(df$idyear),each=nrow(pred_loc)))%>%
   group_by(idyear) %>%
-  nest() 
+  tidyr::nest() 
 
 # Add the posteriors together
 
@@ -160,7 +160,7 @@ cellmeans.full.c <-
   mutate(value = map2(.x = Spatial, .y = data1,
                       .f = function(.x, .y) as.data.frame(.x + .y))) %>%
   dplyr::select(idyear, geometry, value) %>%
-  unnest(cols = c(geometry, value)) %>%
+  tidyr::unnest(cols = c(geometry, value)) %>%
   pivot_longer(c = starts_with("V"), names_to = "Rep") %>%
   mutate(Rep = gsub('\\.','',Rep)) %>%
   ungroup()
